@@ -1,10 +1,10 @@
+use a_counter::app::App;
+use a_counter::event::{Event, EventHandler};
+use a_counter::tui::Tui;
+use a_counter::update::update;
 use anyhow::Result;
 use ratatui::prelude::CrosstermBackend;
 use ratatui::Terminal;
-use tuition::app::App;
-use tuition::event::{Event, EventHandler};
-use tuition::tui::Tui;
-use tuition::update::update;
 
 fn main() -> Result<()> {
     let mut app = App::new();
